@@ -17,7 +17,7 @@ void jointCb( const sensor_msgs::JointState& joints) {
     }
 }
 
-ros::Subscriber<sensor_msgs::JointState> sub("right_hand", jointCb );
+ros::Subscriber<sensor_msgs::JointState> sub("hand", jointCb );
 
 void setup() {
     fingers[0] = new Joint("thumb", 6, 135, 40);
